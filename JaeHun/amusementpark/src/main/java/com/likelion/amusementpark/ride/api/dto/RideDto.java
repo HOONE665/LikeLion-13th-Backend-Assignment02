@@ -1,4 +1,12 @@
 package com.likelion.amusementpark.ride.api.dto;
 
-public record RideDto() {
+
+import lombok.Builder;
+
+@Builder
+public record RideDto(
+        Long id,
+        String name,
+        Long count
+) {
 }
